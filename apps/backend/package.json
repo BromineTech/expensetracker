@@ -1,10 +1,12 @@
 {
   "name": "backend",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify"
+    "dev": "wrangler dev --env .env",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "dotenv": "^16.5.0",
     "hono": "^4.7.6"
   },
   "devDependencies": {
