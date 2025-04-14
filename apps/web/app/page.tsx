@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
+import type { FC } from 'react';
 
-
-const Home = () => {
+const Home: FC = () => {
   const [data, setData] = useState<any | null>(null);
   const [error, setError] = useState<string | null>(null);
 
